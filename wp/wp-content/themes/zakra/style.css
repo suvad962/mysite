@@ -2406,3 +2406,16 @@ select {
 	font-family: "FontAwesome" !important;
 	font-weight:100 !important;
 }
+
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-family: cursive;
+}
+
+.footer a{
+    color: #4ac6d6;
+}

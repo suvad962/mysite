@@ -4,7 +4,7 @@ Tags: contact form, form, form builder, contact, custom form
 Requires at least: 4.0
 Tested up to: 5.2
 Requires PHP: 5.4
-Stable tag: 1.5.6
+Stable tag: 1.5.7
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -45,7 +45,8 @@ Check [documentation](http://docs.wpeverest.com/docs/everest-forms/)
 * Quick Form Preview option
 * CSV exporter for entries
 * Provides two different form template design
-* Google Recaptcha Supported
+* Google Recaptcha V2 and V3 Supported
+* Spam protection via honeypot
 * Editable successful form submission message
 * Redirect option after submission
 * Editable Email Settings
@@ -54,7 +55,7 @@ Check [documentation](http://docs.wpeverest.com/docs/everest-forms/)
 
 ### Premium Features and Addons
 
-* 10 Advanced fields (Image upload, File upload, Hidden Field, Phone, Password, Custom HTML, Section Title, Signature Address, Country)
+* 11 Advanced fields: **Image upload, File upload, Hidden Field, Phone, Password, Custom HTML, Section Title, Signature, Address, Country, Rating**
 
 * [Style Customizer](https://wpeverest.com/wordpress-plugins/everest-forms/style-customizer/?utm_source=wporg&utm_medium=link&utm_campaign=everest-forms-readme) - Allows you to make form design changes like color, fonts, spacing, background, borders, alignments and much more without touching any code.
 
@@ -64,7 +65,7 @@ Check [documentation](http://docs.wpeverest.com/docs/everest-forms/)
 
 * [PDF Form Submission](https://wpeverest.com/wordpress-plugins/everest-forms/pdf-form-submission/?utm_source=wporg&utm_medium=link&utm_campaign=everest-forms-readme) - Allows you to generate digital PDF documents of any form submission to export or send a PDF copy of it via email attachment.
 
-* [PayPal Standard](https://wpeverest.com/wordpress-plugins/everest-forms/paypal-standard/?utm_source=wporg&utm_medium=link&utm_campaign=everest-forms-readme) - Allows you to connect your forms with PayPal to easily collect payments, donations, and online orders.
+* [PayPal Standard](https://wpeverest.com/wordpress-plugins/everest-forms/paypal-standard/?utm_source=wporg&utm_medium=link&utm_campaign=everest-forms-readme) - Allows you to connect your forms with PayPal to easily collect payments, donations, and online orders. Check our article on [accepting PayPal payment via WordPress Forms](https://wpeverest.com/blog/wordpress-form-payment-option-paypal/)
 
 * [Stripe](https://wpeverest.com/wordpress-plugins/everest-forms/stripe/?utm_source=wporg&utm_medium=link&utm_campaign=everest-forms-readme) - Allows you to connect your forms with Stripe to easily collect credit card payments, donations, and online orders.
 
@@ -132,6 +133,12 @@ Bugs can be reported either in our support forum or preferably on the [Everest F
 Yes you can! Join in on our [GitHub repository](https://github.com/wpeverest/everest-forms/) :)
 
 == Changelog ==
+
+= 1.5.7 - 20-11-2019 =
+* Tweak - Design for smart phone field.
+* Tweak - CSS styling for label and radio/checkbox field.
+* Tweak - Introduced entry ID params in filter hook for email attachment.
+* Deprecated - Function `evf_has_date_field` has been deprecated instead added `evf_is_field_exists` function.
 
 = 1.5.6 - 18-10-2019 =
 * Feature - Added form preview button inside builder area.

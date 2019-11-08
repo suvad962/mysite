@@ -21,6 +21,7 @@
 	do_action( 'zakra_action_after_content' );
 	?>
 
+
 	<?php
 	/**
 	 * Hook - zakra_action_before_footer
@@ -45,8 +46,13 @@
 		 *
 		 * @hooked zakra_footer_bottom_bar - 10
 		 */
-		do_action( 'zakra_action_footer_bottom_bar' );
+		//do_action( 'zakra_action_footer_bottom_bar' );
 		?>
+		<div class="footer">
+			<span class="footer_text">2019-2020 &copy; All Rights Reserved to <a href="/">Sudipta Das</a>.</span>	
+		</div>
+		
+
 
 	<?php
 		/**

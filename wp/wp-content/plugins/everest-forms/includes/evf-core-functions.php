@@ -1910,28 +1910,6 @@ function evf_get_all_fields_settings() {
 }
 
 /**
- * Checks if date field exists in the form.
- *
- * @since  1.4.2
- * @param  int $form_id Form ID.
- * @return bool
- */
-function evf_has_date_field( $form_id ) {
-	$form_obj  = EVF()->form->get( $form_id );
-	$form_data = ! empty( $form_obj->post_content ) ? evf_decode( $form_obj->post_content ) : '';
-
-	if ( ! empty( $form_data['form_fields'] ) ) {
-		foreach ( $form_data['form_fields'] as $form_field ) {
-			if ( 'date-time' === $form_field['type'] ) {
-				return true;
-			}
-		}
-	}
-
-	return false;
-}
-
-/**
  * Helper function to display debug data.
  *
  * @since 1.3.2
